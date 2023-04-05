@@ -1,0 +1,16 @@
+<div *ngIf="isLoggedIn()">
+  <h1>name: {{userInfo?.info?.name}}</h1>
+  <h1>mail: {{userInfo?.info?.email}}</h1>
+  <h1>pic: <img src="{{userInfo?.info?.picture}}" alt=""></h1>
+  <button (click)="signOut()">Log out</button>
+</div>
+<h1>
+  {{isPrime(5)}}
+</h1>
+<h1>
+  {{camelLetter('blackpinku')}}
+</h1>
+<h1>
+  {{map}}
+</h1>
+<router-outlet></router-outlet>
